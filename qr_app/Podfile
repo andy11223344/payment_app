@@ -1,0 +1,35 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+use_frameworks!
+
+workspace 'qr_app'
+
+def core_pod
+  target 'Common' do
+    project '../Cores/Common/Common.project'
+  end
+
+  target 'RouterService' do
+    project '../Cores/RouterService/RouterService.project'
+  end
+
+  target 'RouterServiceInterface' do
+    project '../Cores/RouterServiceInterface/RouterServiceInterface.project'
+  end
+end
+
+def core_feature
+  
+end
+
+target 'qr_app' do
+  
+  core_pod
+  
+  target 'qr_appTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
