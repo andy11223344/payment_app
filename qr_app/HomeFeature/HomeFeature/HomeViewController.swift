@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+public class HomeViewController: UIViewController {
     
     var presenter: HomePresentation?
     
@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
 
     required init?(coder: NSCoder) { fatalError() }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
     }
     

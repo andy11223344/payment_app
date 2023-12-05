@@ -13,6 +13,12 @@
 		A1E3A4AA2B1EFC5D0085A3B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1E3A4A92B1EFC5D0085A3B7 /* Assets.xcassets */; };
 		A1E3A4AD2B1EFC5D0085A3B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E3A4AB2B1EFC5D0085A3B7 /* LaunchScreen.storyboard */; };
 		A1E3A4B82B1EFC5D0085A3B7 /* qr_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3A4B72B1EFC5D0085A3B7 /* qr_appTests.swift */; };
+		A1E3A52B2B1F0C3A0085A3B7 /* RouterService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A52A2B1F0C3A0085A3B7 /* RouterService.framework */; };
+		A1E3A52C2B1F0C3A0085A3B7 /* RouterService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A52A2B1F0C3A0085A3B7 /* RouterService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1E3A52F2B1F0C400085A3B7 /* RouterServiceInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A52E2B1F0C400085A3B7 /* RouterServiceInterface.framework */; };
+		A1E3A5302B1F0C400085A3B7 /* RouterServiceInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A52E2B1F0C400085A3B7 /* RouterServiceInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1E3A5322B1F0C7F0085A3B7 /* HomeFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A5312B1F0C7F0085A3B7 /* HomeFeature.framework */; };
+		A1E3A5332B1F0C7F0085A3B7 /* HomeFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A5312B1F0C7F0085A3B7 /* HomeFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DB0A9D2D60AAA05EAFF3CA5A /* Pods_qr_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DEA2D48BC45998A71502F29 /* Pods_qr_app.framework */; };
 		E0B4F9A39823D854000D373A /* Pods_qr_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98DACDC0C0D1BA7B802B3BEB /* Pods_qr_appTests.framework */; };
 /* End PBXBuildFile section */
@@ -26,6 +32,22 @@
 			remoteInfo = qr_app;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1E3A52D2B1F0C3A0085A3B7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A1E3A5302B1F0C400085A3B7 /* RouterServiceInterface.framework in Embed Frameworks */,
+				A1E3A52C2B1F0C3A0085A3B7 /* RouterService.framework in Embed Frameworks */,
+				A1E3A5332B1F0C7F0085A3B7 /* HomeFeature.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3E57DDBA58D66201387463CA /* Pods-qr_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qr_app.debug.xcconfig"; path = "Target Support Files/Pods-qr_app/Pods-qr_app.debug.xcconfig"; sourceTree = "<group>"; };
@@ -43,6 +65,10 @@
 		A1E3A4AE2B1EFC5D0085A3B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1E3A4B32B1EFC5D0085A3B7 /* qr_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qr_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E3A4B72B1EFC5D0085A3B7 /* qr_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qr_appTests.swift; sourceTree = "<group>"; };
+		A1E3A50B2B1F063E0085A3B7 /* HomeFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HomeFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E3A52A2B1F0C3A0085A3B7 /* RouterService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RouterService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E3A52E2B1F0C400085A3B7 /* RouterServiceInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RouterServiceInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E3A5312B1F0C7F0085A3B7 /* HomeFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HomeFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +76,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E3A52F2B1F0C400085A3B7 /* RouterServiceInterface.framework in Frameworks */,
 				DB0A9D2D60AAA05EAFF3CA5A /* Pods_qr_app.framework in Frameworks */,
+				A1E3A5322B1F0C7F0085A3B7 /* HomeFeature.framework in Frameworks */,
+				A1E3A52B2B1F0C3A0085A3B7 /* RouterService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +108,10 @@
 		97554634C2273CFB5C70C570 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1E3A5312B1F0C7F0085A3B7 /* HomeFeature.framework */,
+				A1E3A52E2B1F0C400085A3B7 /* RouterServiceInterface.framework */,
+				A1E3A52A2B1F0C3A0085A3B7 /* RouterService.framework */,
+				A1E3A50B2B1F063E0085A3B7 /* HomeFeature.framework */,
 				9DEA2D48BC45998A71502F29 /* Pods_qr_app.framework */,
 				98DACDC0C0D1BA7B802B3BEB /* Pods_qr_appTests.framework */,
 			);
@@ -153,6 +186,7 @@
 				A1E3A4992B1EFC5C0085A3B7 /* Sources */,
 				A1E3A49A2B1EFC5C0085A3B7 /* Frameworks */,
 				A1E3A49B2B1EFC5C0085A3B7 /* Resources */,
+				A1E3A52D2B1F0C3A0085A3B7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -465,7 +499,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = qr_app/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -493,7 +527,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = qr_app/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

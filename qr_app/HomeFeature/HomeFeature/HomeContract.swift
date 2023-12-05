@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RouterServiceInterface
 
 // MARK: - ViewController
 protocol HomeView: AnyObject {
@@ -37,4 +38,5 @@ protocol HomeInteractorOutput: AnyObject {
 // MARK: - Router
 protocol HomeWireframe: AnyObject {
     var view: UIViewController? { get set }
+    var routerService: RouterServiceProtocol? { get set }
 }

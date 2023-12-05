@@ -13,7 +13,24 @@
 		A1E3A5082B1F05CB0085A3B7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3A5022B1F05CB0085A3B7 /* HomeViewController.swift */; };
 		A1E3A5092B1F05CB0085A3B7 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3A5032B1F05CB0085A3B7 /* HomeInteractor.swift */; };
 		A1E3A50A2B1F05CB0085A3B7 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1E3A5042B1F05CB0085A3B7 /* HomeViewController.xib */; };
+		A1E3A5242B1F09CC0085A3B7 /* HomeFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3A5232B1F09CC0085A3B7 /* HomeFeature.swift */; };
+		A1E3A5272B1F09EB0085A3B7 /* RouterServiceInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A5262B1F09EB0085A3B7 /* RouterServiceInterface.framework */; };
+		A1E3A5282B1F09EB0085A3B7 /* RouterServiceInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A5262B1F09EB0085A3B7 /* RouterServiceInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1E3A5292B1F09EB0085A3B7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A1E3A5282B1F09EB0085A3B7 /* RouterServiceInterface.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A1E3A4F52B1F05B30085A3B7 /* HomeFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HomeFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,6 +40,8 @@
 		A1E3A5022B1F05CB0085A3B7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A1E3A5032B1F05CB0085A3B7 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		A1E3A5042B1F05CB0085A3B7 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		A1E3A5232B1F09CC0085A3B7 /* HomeFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeature.swift; sourceTree = "<group>"; };
+		A1E3A5262B1F09EB0085A3B7 /* RouterServiceInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RouterServiceInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E3A5272B1F09EB0085A3B7 /* RouterServiceInterface.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +61,7 @@
 			children = (
 				A1E3A4F72B1F05B30085A3B7 /* HomeFeature */,
 				A1E3A4F62B1F05B30085A3B7 /* Products */,
+				A1E3A5252B1F09EB0085A3B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +76,7 @@
 		A1E3A4F72B1F05B30085A3B7 /* HomeFeature */ = {
 			isa = PBXGroup;
 			children = (
+				A1E3A5232B1F09CC0085A3B7 /* HomeFeature.swift */,
 				A1E3A4FF2B1F05CB0085A3B7 /* HomeContract.swift */,
 				A1E3A5002B1F05CB0085A3B7 /* HomePresenter.swift */,
 				A1E3A5012B1F05CB0085A3B7 /* HomeRouter.swift */,
@@ -63,6 +85,14 @@
 				A1E3A5042B1F05CB0085A3B7 /* HomeViewController.xib */,
 			);
 			path = HomeFeature;
+			sourceTree = "<group>";
+		};
+		A1E3A5252B1F09EB0085A3B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1E3A5262B1F09EB0085A3B7 /* RouterServiceInterface.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +116,7 @@
 				A1E3A4F12B1F05B30085A3B7 /* Sources */,
 				A1E3A4F22B1F05B30085A3B7 /* Frameworks */,
 				A1E3A4F32B1F05B30085A3B7 /* Resources */,
+				A1E3A5292B1F09EB0085A3B7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +179,7 @@
 				A1E3A5052B1F05CB0085A3B7 /* HomeContract.swift in Sources */,
 				A1E3A5072B1F05CB0085A3B7 /* HomeRouter.swift in Sources */,
 				A1E3A5062B1F05CB0085A3B7 /* HomePresenter.swift in Sources */,
+				A1E3A5242B1F09CC0085A3B7 /* HomeFeature.swift in Sources */,
 				A1E3A5092B1F05CB0085A3B7 /* HomeInteractor.swift in Sources */,
 				A1E3A5082B1F05CB0085A3B7 /* HomeViewController.swift in Sources */,
 			);
@@ -209,7 +241,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -269,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
