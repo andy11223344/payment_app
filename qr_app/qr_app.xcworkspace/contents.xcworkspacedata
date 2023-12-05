@@ -11,6 +11,9 @@
    <Group
       location = "container:"
       name = "Features">
+      <FileRef
+         location = "group:HomeFeature/HomeFeature.xcodeproj">
+      </FileRef>
    </Group>
    <Group
       location = "container:"
