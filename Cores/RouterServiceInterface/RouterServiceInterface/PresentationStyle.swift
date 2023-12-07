@@ -59,6 +59,7 @@ open class ModalPresentationStyle: PresentationStyle {
         animated: Bool,
         completion:  (() -> Void)? = nil
     ) {
+        viewController.modalPresentationStyle = .fullScreen
         fromViewController.present(
             viewController,
             animated: true,

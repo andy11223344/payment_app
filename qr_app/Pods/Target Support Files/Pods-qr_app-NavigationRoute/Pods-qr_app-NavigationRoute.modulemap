@@ -1,0 +1,6 @@
+framework module Pods_qr_app_NavigationRoute {
+  umbrella header "Pods-qr_app-NavigationRoute-umbrella.h"
+
+  export *
+  module * { export * }
+}

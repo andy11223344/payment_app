@@ -12,14 +12,33 @@
 		A1E3A4A82B1EFC5C0085A3B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E3A4A62B1EFC5C0085A3B7 /* Main.storyboard */; };
 		A1E3A4AA2B1EFC5D0085A3B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1E3A4A92B1EFC5D0085A3B7 /* Assets.xcassets */; };
 		A1E3A4AD2B1EFC5D0085A3B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E3A4AB2B1EFC5D0085A3B7 /* LaunchScreen.storyboard */; };
-		A1E3A4B82B1EFC5D0085A3B7 /* qr_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3A4B72B1EFC5D0085A3B7 /* qr_appTests.swift */; };
 		A1E3A52B2B1F0C3A0085A3B7 /* RouterService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A52A2B1F0C3A0085A3B7 /* RouterService.framework */; };
-		A1E3A52C2B1F0C3A0085A3B7 /* RouterService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A52A2B1F0C3A0085A3B7 /* RouterService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1E3A52F2B1F0C400085A3B7 /* RouterServiceInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A52E2B1F0C400085A3B7 /* RouterServiceInterface.framework */; };
-		A1E3A5302B1F0C400085A3B7 /* RouterServiceInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A52E2B1F0C400085A3B7 /* RouterServiceInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1E3A5322B1F0C7F0085A3B7 /* HomeFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A5312B1F0C7F0085A3B7 /* HomeFeature.framework */; };
-		A1E3A5332B1F0C7F0085A3B7 /* HomeFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A5312B1F0C7F0085A3B7 /* HomeFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DB0A9D2D60AAA05EAFF3CA5A /* Pods_qr_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DEA2D48BC45998A71502F29 /* Pods_qr_app.framework */; };
+		A1E3A5B32B1F42760085A3B7 /* AuthService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A5B22B1F42760085A3B7 /* AuthService.framework */; };
+		A1E3A5B62B1F42EB0085A3B7 /* Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A5B52B1F42EB0085A3B7 /* Models.framework */; };
+		A1E3A5E82B1F5E800085A3B7 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A5E72B1F5E800085A3B7 /* Shared.framework */; };
+		A1E3A5F52B1F5F910085A3B7 /* WalletServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A5F42B1F5F910085A3B7 /* WalletServices.framework */; };
+		A1E3A5FD2B2033FE0085A3B7 /* AuthTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3A5FC2B2033FE0085A3B7 /* AuthTest.swift */; };
+		A1E3A5FF2B2036710085A3B7 /* WalletTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3A5FE2B2036710085A3B7 /* WalletTest.swift */; };
+		A1E3A6282B2063D40085A3B7 /* Pods_qr_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DEA2D48BC45998A71502F29 /* Pods_qr_app.framework */; };
+		A1E3A6292B2063D40085A3B7 /* Pods_qr_app.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9DEA2D48BC45998A71502F29 /* Pods_qr_app.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1E3A62C2B2064A50085A3B7 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A62B2B2064A50085A3B7 /* Common.framework */; };
+		A1E3A6302B20650B0085A3B7 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A61C2B205DD80085A3B7 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1E3A6312B20650B0085A3B7 /* WalletServices.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A5F42B1F5F910085A3B7 /* WalletServices.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1E3A6322B20650B0085A3B7 /* Shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A5E72B1F5E800085A3B7 /* Shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1E3A6332B20650B0085A3B7 /* Models.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A5B52B1F42EB0085A3B7 /* Models.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1E3A6342B20650B0085A3B7 /* AuthService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A5B22B1F42760085A3B7 /* AuthService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1E3A6352B20650B0085A3B7 /* HomeFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A5312B1F0C7F0085A3B7 /* HomeFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1E3A6362B20650B0085A3B7 /* RouterServiceInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A52E2B1F0C400085A3B7 /* RouterServiceInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1E3A6372B20650C0085A3B7 /* RouterService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A52A2B1F0C3A0085A3B7 /* RouterService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1E3A6BD2B20B0490085A3B7 /* TransactionHistoryFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A6BC2B20B0490085A3B7 /* TransactionHistoryFeature.framework */; };
+		A1E3A6BE2B20B0490085A3B7 /* TransactionHistoryFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A6BC2B20B0490085A3B7 /* TransactionHistoryFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1E3A6FA2B2187620085A3B7 /* PaymentFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A6F92B2187620085A3B7 /* PaymentFeature.framework */; };
+		A1E3A6FB2B2187620085A3B7 /* PaymentFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A6F92B2187620085A3B7 /* PaymentFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1E3A7402B219A190085A3B7 /* QRScannerFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A73F2B219A190085A3B7 /* QRScannerFeature.framework */; };
+		A1E3A7412B219A190085A3B7 /* QRScannerFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E3A73F2B219A190085A3B7 /* QRScannerFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1E3A75D2B21AA210085A3B7 /* QRStringConverterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3A75C2B21AA210085A3B7 /* QRStringConverterTest.swift */; };
 		E0B4F9A39823D854000D373A /* Pods_qr_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98DACDC0C0D1BA7B802B3BEB /* Pods_qr_appTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,15 +53,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A1E3A52D2B1F0C3A0085A3B7 /* Embed Frameworks */ = {
+		A1E3A62A2B2063D50085A3B7 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A1E3A5302B1F0C400085A3B7 /* RouterServiceInterface.framework in Embed Frameworks */,
-				A1E3A52C2B1F0C3A0085A3B7 /* RouterService.framework in Embed Frameworks */,
-				A1E3A5332B1F0C7F0085A3B7 /* HomeFeature.framework in Embed Frameworks */,
+				A1E3A6FB2B2187620085A3B7 /* PaymentFeature.framework in Embed Frameworks */,
+				A1E3A6302B20650B0085A3B7 /* Common.framework in Embed Frameworks */,
+				A1E3A6312B20650B0085A3B7 /* WalletServices.framework in Embed Frameworks */,
+				A1E3A7412B219A190085A3B7 /* QRScannerFeature.framework in Embed Frameworks */,
+				A1E3A6322B20650B0085A3B7 /* Shared.framework in Embed Frameworks */,
+				A1E3A6332B20650B0085A3B7 /* Models.framework in Embed Frameworks */,
+				A1E3A6342B20650B0085A3B7 /* AuthService.framework in Embed Frameworks */,
+				A1E3A6352B20650B0085A3B7 /* HomeFeature.framework in Embed Frameworks */,
+				A1E3A6362B20650B0085A3B7 /* RouterServiceInterface.framework in Embed Frameworks */,
+				A1E3A6372B20650C0085A3B7 /* RouterService.framework in Embed Frameworks */,
+				A1E3A6292B2063D40085A3B7 /* Pods_qr_app.framework in Embed Frameworks */,
+				A1E3A6BE2B20B0490085A3B7 /* TransactionHistoryFeature.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,11 +92,24 @@
 		A1E3A4AC2B1EFC5D0085A3B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1E3A4AE2B1EFC5D0085A3B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1E3A4B32B1EFC5D0085A3B7 /* qr_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qr_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1E3A4B72B1EFC5D0085A3B7 /* qr_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qr_appTests.swift; sourceTree = "<group>"; };
 		A1E3A50B2B1F063E0085A3B7 /* HomeFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HomeFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E3A52A2B1F0C3A0085A3B7 /* RouterService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RouterService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E3A52E2B1F0C400085A3B7 /* RouterServiceInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RouterServiceInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E3A5312B1F0C7F0085A3B7 /* HomeFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HomeFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E3A5B22B1F42760085A3B7 /* AuthService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AuthService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E3A5B52B1F42EB0085A3B7 /* Models.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Models.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E3A5E72B1F5E800085A3B7 /* Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E3A5F42B1F5F910085A3B7 /* WalletServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WalletServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E3A5FC2B2033FE0085A3B7 /* AuthTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTest.swift; sourceTree = "<group>"; };
+		A1E3A5FE2B2036710085A3B7 /* WalletTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTest.swift; sourceTree = "<group>"; };
+		A1E3A61C2B205DD80085A3B7 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E3A6252B20619F0085A3B7 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E3A62B2B2064A50085A3B7 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E3A6B92B20B0070085A3B7 /* NavigationRoute.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NavigationRoute.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E3A6BC2B20B0490085A3B7 /* TransactionHistoryFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TransactionHistoryFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E3A6F92B2187620085A3B7 /* PaymentFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PaymentFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E3A73F2B219A190085A3B7 /* QRScannerFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QRScannerFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E3A75C2B21AA210085A3B7 /* QRStringConverterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRStringConverterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +117,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E3A6FA2B2187620085A3B7 /* PaymentFeature.framework in Frameworks */,
+				A1E3A62C2B2064A50085A3B7 /* Common.framework in Frameworks */,
 				A1E3A52F2B1F0C400085A3B7 /* RouterServiceInterface.framework in Frameworks */,
-				DB0A9D2D60AAA05EAFF3CA5A /* Pods_qr_app.framework in Frameworks */,
+				A1E3A7402B219A190085A3B7 /* QRScannerFeature.framework in Frameworks */,
+				A1E3A6BD2B20B0490085A3B7 /* TransactionHistoryFeature.framework in Frameworks */,
+				A1E3A5F52B1F5F910085A3B7 /* WalletServices.framework in Frameworks */,
+				A1E3A6282B2063D40085A3B7 /* Pods_qr_app.framework in Frameworks */,
+				A1E3A5B32B1F42760085A3B7 /* AuthService.framework in Frameworks */,
+				A1E3A5B62B1F42EB0085A3B7 /* Models.framework in Frameworks */,
 				A1E3A5322B1F0C7F0085A3B7 /* HomeFeature.framework in Frameworks */,
+				A1E3A5E82B1F5E800085A3B7 /* Shared.framework in Frameworks */,
 				A1E3A52B2B1F0C3A0085A3B7 /* RouterService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +157,17 @@
 		97554634C2273CFB5C70C570 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1E3A73F2B219A190085A3B7 /* QRScannerFeature.framework */,
+				A1E3A6F92B2187620085A3B7 /* PaymentFeature.framework */,
+				A1E3A6BC2B20B0490085A3B7 /* TransactionHistoryFeature.framework */,
+				A1E3A6B92B20B0070085A3B7 /* NavigationRoute.framework */,
+				A1E3A62B2B2064A50085A3B7 /* Common.framework */,
+				A1E3A6252B20619F0085A3B7 /* Common.framework */,
+				A1E3A61C2B205DD80085A3B7 /* Common.framework */,
+				A1E3A5F42B1F5F910085A3B7 /* WalletServices.framework */,
+				A1E3A5E72B1F5E800085A3B7 /* Shared.framework */,
+				A1E3A5B52B1F42EB0085A3B7 /* Models.framework */,
+				A1E3A5B22B1F42760085A3B7 /* AuthService.framework */,
 				A1E3A5312B1F0C7F0085A3B7 /* HomeFeature.framework */,
 				A1E3A52E2B1F0C400085A3B7 /* RouterServiceInterface.framework */,
 				A1E3A52A2B1F0C3A0085A3B7 /* RouterService.framework */,
@@ -151,7 +211,9 @@
 		A1E3A4B62B1EFC5D0085A3B7 /* qr_appTests */ = {
 			isa = PBXGroup;
 			children = (
-				A1E3A4B72B1EFC5D0085A3B7 /* qr_appTests.swift */,
+				A1E3A5FC2B2033FE0085A3B7 /* AuthTest.swift */,
+				A1E3A5FE2B2036710085A3B7 /* WalletTest.swift */,
+				A1E3A75C2B21AA210085A3B7 /* QRStringConverterTest.swift */,
 			);
 			path = qr_appTests;
 			sourceTree = "<group>";
@@ -186,7 +248,7 @@
 				A1E3A4992B1EFC5C0085A3B7 /* Sources */,
 				A1E3A49A2B1EFC5C0085A3B7 /* Frameworks */,
 				A1E3A49B2B1EFC5C0085A3B7 /* Resources */,
-				A1E3A52D2B1F0C3A0085A3B7 /* Embed Frameworks */,
+				A1E3A62A2B2063D50085A3B7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -335,7 +397,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1E3A4B82B1EFC5D0085A3B7 /* qr_appTests.swift in Sources */,
+				A1E3A5FF2B2036710085A3B7 /* WalletTest.swift in Sources */,
+				A1E3A5FD2B2033FE0085A3B7 /* AuthTest.swift in Sources */,
+				A1E3A75D2B21AA210085A3B7 /* QRStringConverterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

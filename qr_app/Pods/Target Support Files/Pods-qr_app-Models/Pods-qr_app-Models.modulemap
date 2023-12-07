@@ -1,0 +1,6 @@
+framework module Pods_qr_app_Models {
+  umbrella header "Pods-qr_app-Models-umbrella.h"
+
+  export *
+  module * { export * }
+}

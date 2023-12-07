@@ -7,10 +7,34 @@
    <Group
       location = "container:"
       name = "Shared">
+      <FileRef
+         location = "group:NavigationRoute/NavigationRoute.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Shared/Shared.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:AuthService/AuthService.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Models/Models.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:WalletServices/WalletServices.xcodeproj">
+      </FileRef>
    </Group>
    <Group
       location = "container:"
       name = "Features">
+      <FileRef
+         location = "group:QRScannerFeature/QRScannerFeature.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:PaymentFeature/PaymentFeature.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:TransactionHistoryFeature/TransactionHistoryFeature.xcodeproj">
+      </FileRef>
       <FileRef
          location = "group:HomeFeature/HomeFeature.xcodeproj">
       </FileRef>

@@ -8,6 +8,10 @@
 
 import UIKit
 import RouterServiceInterface
+import Models
+import AuthService
+import WalletServices
+import NavigationRoute
 
 public class HomeRouter  {
     
@@ -16,11 +20,14 @@ public class HomeRouter  {
     var routerService: RouterServiceProtocol?
     
     // MARK: Static methods
-    static func createModule(routerService: RouterServiceProtocol) -> UIViewController {
+    static func createModule(
+        routerService: RouterServiceProtocol,
+        wallet: WalletServiceInterface
+    ) -> UIViewController {
         
         let presenter: HomePresentation & HomeInteractorOutput = HomePresenter()
-        let view: UIViewController & HomeView = HomeViewController()
-        let interactor: HomeUseCase = HomeInteractor()
+        let view: UIViewController & HomeView = HomeViewController(presenter: presenter)
+        let interactor: HomeUseCase = HomeInteractor(wallet: wallet)
         let router: HomeWireframe = HomeRouter()
         
         view.presenter = presenter
@@ -30,7 +37,7 @@ public class HomeRouter  {
         interactor.presenter = presenter
         router.view = view
         
-        router.routerService = routerService
+        (router as? HomeRouter)?.routerService = routerService
         
         return view
     }
@@ -38,5 +45,12 @@ public class HomeRouter  {
 }
 
 extension HomeRouter: HomeWireframe {
-    
+    func navigateTo(route: Route) {
+        guard let view else { return }
+        
+        routerService?.navigate(toRoute: route,
+                                fromView: view,
+                                presentationStyle: Push(),
+                                animated: true)
+    }
 }

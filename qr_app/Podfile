@@ -19,15 +19,51 @@ def core_pod
   end
 end
 
+def shared_pod
+  
+  target 'Shared' do
+    project 'Shared/Shared.project'
+  end
+  
+  target 'Models' do
+    project 'Models/Models.project'
+  end
+  
+  target 'AuthService' do
+    project 'AuthService/AuthService.project'
+  end
+  
+  target 'WalletServices' do
+    project 'WalletServices/WalletServices.project'
+  end
+  
+  target 'NavigationRoute' do
+    project 'NavigationRoute/NavigationRoute.project'
+  end
+end
+
 def core_feature
   target 'HomeFeature' do
     project 'HomeFeature/HomeFeature.project'
+  end
+  
+  target 'QRScannerFeature' do
+    project 'QRScannerFeature/QRScannerFeature.project'
+  end
+  
+  target 'PaymentFeature' do
+    project 'PaymentFeature/PaymentFeature.project'
+  end
+  
+  target 'TransactionHistoryFeature' do
+    project 'TransactionHistoryFeature/TransactionHistoryFeature.project'
   end
 end
 
 target 'qr_app' do
   
   core_pod
+  shared_pod
   
   target 'qr_appTests' do
     inherit! :search_paths
